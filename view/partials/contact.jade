@@ -1,0 +1,26 @@
+extends ../default.jade
+
+block pageContent
+    div.page-content
+
+        
+        script(src="/assets/js/form-validate.js")
+        script(src="/assets/js/jquery-validate.min.js")
+
+        h1= 'Contact Form'
+        p   
+            | I can also be contacted through <a href="//github.com/elystus">GitHub</a>.
+
+        - if (returnBoolean)
+            span.error-msg
+                | There was an error processing this form! 
+            
+        form.contact-form(method="POST", enctype="application/x-www-form-urlencoded" id="contact-form")
+            div.form-control.adj-input
+                input(type="text" placeholder="First Name" id="contact-name-first" name="contact[nameFirst]" required)
+                input(type="text" placeholder="Last Name" id="contact-name-last" name="contact[nameLast]" required)
+            div.form-control
+                input(type="email" placeholder="Email" id="contact_email" name="contact[email]" required)
+            div.form-control
+                textarea( placeholder="Your Message..." id="contact-msg" name="contact[msg]")
+            input.block-button(type="submit" value="Submit")

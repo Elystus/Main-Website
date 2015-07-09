@@ -1,0 +1,51 @@
+extends ../default.jade
+
+block pageContent
+    div.page-content
+        h1= 'Personal Projects'
+        p
+            | This page serves as an index of all current projects developed by me. 
+        p
+            | If you have any inquiries about these projects, feel free to contact me!
+        a.block-button(href="/contact")= 'Contact Form'
+    div.page-content
+        div.content-inline
+            div.page-prjs-logo
+                a(href="/", style="background-image: url('/assets/img/prjs/prj-personal-website.jpg');")
+            div.page-prjs-desc
+                h2= 'Personal Website'
+                p 
+                    | My personal business website, allowing people to easily contact me for potential freelance jobs. This website generally serves as a middle ground between most of my websites. This website was built as part of a 24 hour coding challenge.
+                p
+                    | This website was built using Node.js on the express framework and utilizes the Jade templating system. 
+        div.page-prjs-links
+            a(href="/")= 'View Site'
+            a(href="//github.com/elystus")= 'Source Code'
+
+    div.page-content
+        div.content-inline
+            div.page-prjs-logo
+                a(href="/", style="background-image: url('/assets/img/prjs/prj-blog-website.jpg');")
+            div.page-prjs-desc
+                h2= 'Personal Blog'
+                p 
+                    | My personal blog, used to communicate my thoughts, ideas, and plans to anyone who wishes to know such information.
+                p
+                    | For this website I created a theme, called Wolfe, for the Ghost blogging platform. It goes for the more simple, modern approach found within my websites but also achieves that slight quirky character that is commonly infused into my websites.
+        div.page-prjs-links
+            a(href="http://blog.elyst.us")= 'View Site'
+            a(href="https://github.com/Elystus/Wolfe-Theme")= 'Source Code'   
+            
+    div.page-content
+        div.content-inline
+            div.page-prjs-logo
+                a(href="http://mods.scrollsguide.com/", style="background-image: url('/assets/img/prjs/prj-scrollsguide-website.jpg');")
+            div.page-prjs-desc
+                h2= 'Scrolls Mod Repository'
+                p 
+                    | A website made in conjunction with Kbasten in 2013, owner of <a href="//www.scrollsguide.com/">Scrollsguide.com</a>, to help support the release of the newly released ModLoader for Scrolls, a game by Mojang.
+                p
+                    | I created the modern, flat theme for this website and helped build and maintain the PHP backbone of this web application.
+        div.page-prjs-links
+            a(href="http://mods.scrollsguide.com/")= 'View Site'
+            a(href="https://github.com/kbasten/ScrollsModRepo")= 'Source Code'

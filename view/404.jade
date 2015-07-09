@@ -1,0 +1,17 @@
+doctype html
+head
+    include ./static/header.jade
+body
+    div.masthead.not-found
+        div.container
+            div.container-center
+                div.site-brand
+                    a.brand-logo(href="/")
+                div.site-title
+                    h1= 'Error 404'
+                    h3= 'Page does not exist!'
+                a(class="home-button" href="/")= "Home Page"
+
+        include ./static/footer.jade
+
+    script(src="/assets/js/jquery-2.1.3.min.js")
